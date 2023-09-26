@@ -5,7 +5,7 @@ public class CafeJava {
         String generalGreeting = "Welcome to Cafe Java, ";
         String pendingMessage = ", your order will be ready shortly";
         String readyMessage = ", your order is ready";
-        String displayTotalMessage = "Your total is $";
+        String displayTotalMessage = ", Your total is $";
         
         // Menu variables (add yours below)
         double mochaPrice = 3.5;
@@ -22,13 +22,20 @@ public class CafeJava {
     
         // Order completions (add yours below)
         boolean isReadyOrder1 = false;
-        boolean isReadyOrder2 = True;
-        boolean isReadyOrder3 = True;
-        boolean isReadyOrder4 = false;
+        boolean isReadyOrder2 = true;
+        boolean isReadyOrder3 = true;
+        boolean isReadyOrder4 = true;
     
         // APP INTERACTION SIMULATION (Add your code for the challenges below)
+        
         // Example:
         System.out.println(generalGreeting + customer1); // Displays "Welcome to Cafe Java, Cindhuri"
     	// ** Your customer interaction print statements will go here ** //
+        System.out.println(customer1 + pendingMessage); //for Cindhuri
+
+        if(isReadyOrder4) {
+        // what to do if condition is true
+        System.out.println(customer4 + readyMessage + displayTotalMessage + cappuccino);
+        }
     }
 }
